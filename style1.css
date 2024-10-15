@@ -1,0 +1,31 @@
+body {
+  background-color: coral;
+}
+.container {
+  display: grid;
+  height: 600px;
+  width: 100%;
+  color: rgb(222, 88, 88);
+  border: 1px solid rgb(94, 94, 130);
+  background-color: burlywood;
+  /* grid-template-columns: 200px 300px auto auto; */
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+ pause
+.row1,
+.row2,
+.row3,
+.row4 {
+  border: 1px solid green;
+}
+.row1 {
+  grid-column: 1/13;
+  grid-row: 1/2;
+  height: 80px;
+  background-color: rgb(56, 56, 56);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
